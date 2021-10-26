@@ -57,6 +57,7 @@
             $mail->SMTPDebug = 0;       
             $query=mysqli_query($con,"SELECT id FROM user WHERE email='$email'");
             $data = mysqli_fetch_assoc($query);
+            // $mail->Body='Terima kasih sudah mendaftar di E-Lib, silahkan klik link berikut ini untuk mengaktivasi akun anda: http://localhost:8080/projek-uts/activation.php?id='.$data['id'].'';  
             $mail->Body='Terima kasih sudah mendaftar di E-Lib, silahkan klik link berikut ini untuk mengaktivasi akun anda: http://localhost:8080/projek-uts/activation.php?id='.$data['id'].'';  
             $mail->send();
             echo
