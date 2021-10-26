@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'E-Lib'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_CCB3F1EE9109439DB688C40D69BA6D1B }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C3E7EE0A8A7B42B7A8AA192632E6AFCB }}
           package: .
